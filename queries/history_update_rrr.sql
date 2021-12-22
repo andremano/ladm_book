@@ -10,9 +10,9 @@ INSERT INTO hist_rrr(
 						end,
 						party_id,
 						baunit_id,
-						beginLifespan
-						endLifespan
-						fid,						"operation")
+						beginLifespan,
+						endLifespan,
+						"operation")
 			VALUES (	 
 						old.id, 
 						old.type, 
@@ -21,9 +21,9 @@ INSERT INTO hist_rrr(
 						old.end,
 						old.party_id,
 						old.baunit_id,
-						old.beginLifespan
-						old.endLifespan
-						old.fid,						'UPDATE');
+						old.beginLifespan,
+						datetime(),
+						'UPDATE');
 END;
 
 --drop trigger update_rrr_hist;

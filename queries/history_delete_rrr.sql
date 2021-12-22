@@ -11,8 +11,7 @@ INSERT INTO hist_rrr(
 						party_id,
 						baunit_id,
 						beginLifespan,
-						endLifespan,
-						fid,						"operation")
+						endLifespan,						"operation")
 			VALUES (	 
 						old.id, 
 						old.type, 
@@ -22,8 +21,7 @@ INSERT INTO hist_rrr(
 						old.party_id,
 						old.baunit_id,
 						old.beginLifespan,
-						old.endLifespan,
-						old.fid,						'DELETE');
+						datetime(),						'DELETE');
 END;
 
 --drop trigger delete_rrr_hist;
