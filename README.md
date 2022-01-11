@@ -1,4 +1,4 @@
-# ladm_book
+# Read Me First
 Accompaning courseware for the upcoming book on the LADM model
 
 ## Organization
