@@ -1,3 +1,3 @@
-select row_number() over() as fid, x(geometry) as coor_x, y(geometry) as coor_y,
-dissolvepoints(geometry) as geometry
+select row_number() over() as fid, x(geom) as coor_x, y(geom) as coor_y,
+dissolvepoints(geom) as geometry
 from spatial_unit
